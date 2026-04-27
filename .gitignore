@@ -1,0 +1,26 @@
+# -----------------------------
+# Verilog / FPGA .gitignore
+# -----------------------------
+
+# Icarus Verilog (Standard open-source simulator)
+*.out
+*.vvp
+*.vcd       # Waveform files (these get HUGE, definitely ignore them!)
+
+# Xilinx Vivado (Common industry tool)
+*.jou
+*.log
+*.pb
+*.wdb
+.Xil/
+*.dir/
+
+# Intel/Altera Quartus
+db/
+incremental_db/
+*.rpt
+*.summary
+
+# General OS Junk
+.DS_Store   # Mac junk
+Thumbs.db   # Windows junk
