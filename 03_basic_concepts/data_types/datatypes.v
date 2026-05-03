@@ -9,11 +9,12 @@ module datatype;
 
     //3. Vectors
     reg [7:0] bus; //8-bit bus
-
+    
 
 
 
     initial begin
-        $display(net1, register1);
+        bus = 'b1011;
+        $display(net1, register1, bus);
     end
 endmodule
