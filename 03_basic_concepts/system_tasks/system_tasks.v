@@ -10,6 +10,10 @@
 
 
 module system_tasks;
+    initial begin
+    $dumpfile("system_tasks.vcd");
+    $dumpvars(0,system_tasks);
+    end
     initial
         $display("Hello Verilog World!!");
 
@@ -24,7 +28,7 @@ module system_tasks;
         #10 clk = ~clk;
 
     initial begin
-        $monitor("Clk value is: %t -- var value is: %b", clk, var);
+        $monitor($time, " Clk value is: %b -- var value is: %b", clk, var);
 
         #50 $stop; //type 'cont' in terminal to continue -- or 'finish' to finish the sim there. -- there are still many command present for debugging and all (explore them)
         #100 $finish;
