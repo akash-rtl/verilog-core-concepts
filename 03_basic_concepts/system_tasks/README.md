@@ -1,6 +1,6 @@
 # Output & Graph:
 
-![Graph for the code](graph.png)
+![Graph for the code](images/graph.png)
 
 Hello Verilog World!! <br>
 Binary value of var is: 01000 <br>
