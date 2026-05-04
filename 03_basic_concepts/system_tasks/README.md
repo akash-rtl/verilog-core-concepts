@@ -1,6 +1,8 @@
-# Output & Graph:
+## Waveform
 
-![Graph for the code](images/graph.png)
+![Graph for the code](images/waveform.png)
+
+## Simulation Output
 ```
 Hello Verilog World!! 
 Binary value of var is: 01000
