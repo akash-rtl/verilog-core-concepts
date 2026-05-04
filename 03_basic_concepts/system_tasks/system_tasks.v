@@ -10,23 +10,21 @@
 
 
 module system_tasks;
-    initial begin
-    $dumpfile("system_tasks.vcd");
-    $dumpvars(0,system_tasks);
-    end
+    
     initial
         $display("Hello Verilog World!!");
 
-    reg [4:0] var = 25;
+    reg [4:0] var = 8;
     initial
         $display("Binary value of var is: %b",var);
 
     //$monitor
 
     reg clk = 0;
-    always
+    always begin
         #10 clk = ~clk;
-
+        var = var + 1;
+    end
     initial begin
         $monitor($time, " Clk value is: %b -- var value is: %b", clk, var);
 
@@ -34,6 +32,14 @@ module system_tasks;
         #100 $finish;
     end  
     
+
+
+
+    //let us get the graph for above vars:
+    initial begin
+    $dumpfile("system_tasks.vcd");
+    $dumpvars(0,system_tasks);
+    end
     
 
 endmodule
