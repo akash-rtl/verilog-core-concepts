@@ -14,7 +14,7 @@ VCD info: dumpfile system_tasks.vcd opened for output.<br>
 ** VVP Stop(0) **<br>
 ** Flushing output streams.<br>
 ** Current simulation time is 50 ticks.<br>
-> cont<br>
+\> cont<br>
 ** Continue **<br>
                   50 Clk value is: 1 -- var value is: 01101<br>
                   60 Clk value is: 0 -- var value is: 01110<br>
