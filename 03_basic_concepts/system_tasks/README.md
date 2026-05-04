@@ -1,4 +1,7 @@
-Output & Graph:
+# Output & Graph:
+
+![Graph for the code](graph.png)
+
 Hello Verilog World!!
 Binary value of var is: 01000
 VCD info: dumpfile system_tasks.vcd opened for output.
