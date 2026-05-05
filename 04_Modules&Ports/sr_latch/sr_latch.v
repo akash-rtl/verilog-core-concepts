@@ -2,7 +2,7 @@ module sr_latch(Sbar, Rbar, Q, Qbar);
     input Sbar, Rbar;
     output Q, Qbar;
 
-    nand(Q,Sbar, Qbar);
-    nand(Qbar, Rbar, Q);
+    nand n1(Q,Sbar, Qbar);
+    nand n2(Qbar, Rbar, Q);
 
 endmodule
