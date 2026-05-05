@@ -21,6 +21,6 @@ S̅	R̅	 Q 	  Operation
                   30 -- Sbar = 1 -- Rbar = 1 -- Q = 0 -- Qbar = 1
 ```
 ### Future Improvements
-Add NOR-based SR latch for comparison
-Extend to clocked SR Flip-Flop
-Introduce D Flip-Flop using SR latch
+Add NOR-based SR latch for comparison. 
+Extend to clocked SR Flip-Flop. 
+Introduce D Flip-Flop using SR latch. 
