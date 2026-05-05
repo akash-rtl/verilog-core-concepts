@@ -1,5 +1,5 @@
 ## Description
-This code demonstrates basic $display, $monitor, $stop, $finish system tasks. Also the system tasks involved for the formation of graph $dumpfile and $dumpvars is also demonstrated
+This code demonstrates basic $display, $monitor, $stop, $finish system tasks. Also the system tasks involved for the formation of graph $dumpfile and $dumpvars are also demonstrated.
 
 ## Waveform
 
