@@ -1,21 +1,21 @@
 module tb;
-    reg s,r;
+    reg sbar,rbar;
     wire q, qbar;
 
-    sr_latch uut(~s,~r,q,qbar);
+    sr_latch uut(sbar,rbar,q,qbar);
 
     initial begin
         
         $dumpfile("tb_sr_latch.vcd");
         $dumpvars(0,tb);
 
-        $monitor($time, " -- S = %b -- R = %b -- Q = %b -- Qbar = %b", s, r, q, qbar);
+        $monitor($time, " -- Sbar = %b -- Rbar = %b -- Q = %b -- Qbar = %b", sbar, rbar, q, qbar);
         
         
-        s = 0; r = 1;
-        #10 s = 0; r = 0;
-        #10 s = 1; r = 0;
-        #10 s = 0; r = 0;
+        sbar = 0; rbar = 1;
+        #10 sbar = 1; rbar = 1;
+        #10 sbar = 1; rbar = 0;
+        #10 sbar = 1; rbar = 1;
         #10;
 
         // #10 $finish;
