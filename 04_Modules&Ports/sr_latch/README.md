@@ -1,5 +1,5 @@
 # SR Latch
-### Description
-### Waveform
+## Description
+## Waveform
 ![sr_latch-waveform](images/waveform.png)
-### Output
+## Output
