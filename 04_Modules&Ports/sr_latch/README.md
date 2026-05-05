@@ -5,9 +5,9 @@ This implementation uses active-low inputs (S̅ and R̅).
 ### Description
 The latch is constructed using two cross-coupled NAND gates, forming a bistable circuit.
 ``` Truth Table (NAND SR Latch – Active Low)
-S̅	R̅	Q (Next State)	Q̅	Operation
-0	1	1	0	Set
-1	0	0	1	Reset
+S̅	R̅	  Q 	  Operation
+0	1	1		Set
+1	0	0		Reset
 1	1	Hold	Q̅ prev	No Change
 0	0	Invalid	Invalid	Forbidden
 ```
