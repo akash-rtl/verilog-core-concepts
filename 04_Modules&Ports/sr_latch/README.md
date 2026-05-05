@@ -25,10 +25,10 @@ endmodule
 To verify the design, the circuit was simulated using Icarus Verilog and visualized through GTKWave. The testbench was designed to exercise all valid states, specifically focusing on the memory (Hold) capability after both Set and Reset operations.
 ### Simulation Output (Console Output)
 ```
-                   0 -- Sbar = 0 -- Rbar = 1 -- Q = 1 -- Qbar = 0
-                  10 -- Sbar = 1 -- Rbar = 1 -- Q = 1 -- Qbar = 0
-                  20 -- Sbar = 1 -- Rbar = 0 -- Q = 0 -- Qbar = 1
-                  30 -- Sbar = 1 -- Rbar = 1 -- Q = 0 -- Qbar = 1
+                   0 -- Sbar = 0 -- Rbar = 1 -- Q = 1 -- Qbar = 0 //set
+                  10 -- Sbar = 1 -- Rbar = 1 -- Q = 1 -- Qbar = 0 //hold after set
+                  20 -- Sbar = 1 -- Rbar = 0 -- Q = 0 -- Qbar = 1 //reset
+                  30 -- Sbar = 1 -- Rbar = 1 -- Q = 0 -- Qbar = 1 //hold after reset
                   
 ```
 ### Waveform
