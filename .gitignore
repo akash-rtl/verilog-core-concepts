@@ -5,7 +5,8 @@
 # Icarus Verilog (Standard open-source simulator)
 *.out
 *.vvp
-*.vcd       # Waveform files (these get HUGE, definitely ignore them!)
+*.vcd      
+# Waveform files (these get HUGE, definitely ignore them!)
 
 # Xilinx Vivado (Common industry tool)
 *.jou
