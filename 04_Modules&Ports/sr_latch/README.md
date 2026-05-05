@@ -1,5 +1,6 @@
 ## SR Latch
 ### Description
+This repository contains the RTL implementation and functional verification of a cross-coupled NAND-based Set-Reset (SR) Latch. The project demonstrates fundamental sequential logic design, gate-level modeling, and simulation-based verification using Icarus Verilog and GTKWave.
 ### Waveform
 ![sr_latch-waveform](images/waveform.png)
 ### Output

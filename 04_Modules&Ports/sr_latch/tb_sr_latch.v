@@ -6,7 +6,7 @@ module tb;
 
     initial begin
         
-        $dumpfile("sr_waveform.vcd");
+        $dumpfile("tb_sr_latch.vcd");
         $dumpvars(0,tb);
 
         $monitor($time, " -- S = %b -- R = %b -- Q = %b -- Qbar = %b", s, r, q, qbar);
