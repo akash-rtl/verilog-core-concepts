@@ -1,5 +1,5 @@
 ## Terminal Output:
-
+```
 Sol_1:  173 -- xxxx -- 1110 -- 1234
 
 
@@ -12,3 +12,4 @@ This is a backslash \ charecter\n
 
 Sol5:
 The current value of latch = 0
+```
