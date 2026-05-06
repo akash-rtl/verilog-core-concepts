@@ -1,4 +1,4 @@
-# Output:
+## Terminal Output:
 
 Sol_1:  173 -- xxxx -- 1110 -- 1234
 
