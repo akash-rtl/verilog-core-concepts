@@ -36,7 +36,7 @@ To verify the design, the circuit was simulated using Icarus Verilog and visuali
 
 ### Future Improvements
 ```
--Add a NOR-based SR latch for comparative analysis of active-high vs active-low logic.
--Advance the design to a clocked SR Flip-Flop to study synchronous behavior.
--Utilize the SR latch as a building block for a D-type Flip-Flop.
+Add a NOR-based SR latch for comparative analysis of active-high vs active-low logic.
+Advance the design to a clocked SR Flip-Flop to study synchronous behavior.
+Utilize the SR latch as a building block for a D-type Flip-Flop.
 ```
