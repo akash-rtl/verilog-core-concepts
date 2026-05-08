@@ -3,14 +3,14 @@
 Instantiation of Verilog predefined primitive gates for different input combinations.
 
 ### Gates Covered
-```
+//```
 - AND
 - OR
 - XOR
 - NAND
 - NOR
 - XNOR
-```
+//```
 
 ### Console Output:
 ``` 
