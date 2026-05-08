@@ -2,8 +2,10 @@
 This is 4:1 Multiplexer designed in verilog completely based on Gate-Level-Abstraction.
 
 ### Logic and truth table
-### Implementation Details
-### Verification and Simulation
-### Simulation output
-### Waveform
+![Truth Table](images/truthtable.png)
+
+### Circuit Design
+![Circuit Design](images/digitaldesign.png)
+
+
 ### Future Improvement
