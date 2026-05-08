@@ -1,5 +1,5 @@
 module basic_gates(
-    output [0:5] OUT,
+    output [5:0] OUT,
     input I1, I2, I3
 );
 // We will instantiate each gate after certain delay and in test_bench print is using $monitor
@@ -21,3 +21,5 @@ xnor (OUT[5], I1, I2);
 
 
 endmodule
+
+
