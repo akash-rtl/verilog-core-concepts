@@ -1,4 +1,6 @@
-## Primitve Gates
+## Predefined Gates
+At GATE level, here all the predifined primitive GATES are instantiated for different inputs
+
 
 ### Console Output:
 ```
