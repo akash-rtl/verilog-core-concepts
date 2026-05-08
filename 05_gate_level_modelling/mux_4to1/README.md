@@ -28,7 +28,8 @@ Future implementations of the same design will also explore:
 ---
 ## Simulation Output
 ```
-I0 = 1, I1 = 0, I2 = 0, I3 = 1: 
+Input Configuration:
+[I0 = 1, I1 = 0, I2 = 0, I3 = 1]: 
 
  0 Select: {S1S0} = 00 -- OUTPUT: 1
  5 Select: {S1S0} = 01 -- OUTPUT: 0

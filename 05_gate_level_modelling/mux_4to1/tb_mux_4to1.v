@@ -1,32 +1,32 @@
 module tb;
 
-wire out;
-reg i0,i1,i2,i3;
-reg s1,s0;
+wire OUT;
+reg I0,I1,I2,I3;
+reg S1,S0;
 
-mux m1(.OUT(out), .I0(i0), .I1(i1), .I2(i2), .I3(i3), .S0(s0), .S1(s1));
+mux m1(.OUT(OUT), .I0(I0), .I1(I1), .I2(I2), .I3(I3), .S0(S0), .S1(S1));
 
 initial begin
     $dumpfile("tb_mux_4to1.vcd");
     $dumpvars(0,tb);
 
-    i0 = 1; i1 = 0; i2 = 0; i3 = 1;
+    I0 = 1; I1 = 0; I2 = 0; I3 = 1;
 
-    $display("I0 = %B, I1 = %B, I2 = %B, I3 = %B: \n", i0, i1, i2, i3);
+    $display("Input Configuration:\n[I0 = %B, I1 = %B, I2 = %B, I3 = %B]: \n", I0, I1, I2, I3);
 
     $monitor("%2t Select: {S1S0} = %B%b -- OUTPUT: %B",
-    $time, s1, s0, out
+    $time, S1, S0, OUT
     );
 
     
     
-    s1 = 0; s0 = 0;
+    S1 = 0; S0 = 0;
 
-    #5 s1 = 0; s0 = 1;
+    #5 S1 = 0; S0 = 1;
     
-    #5 s1 = 1; s0 = 0;
+    #5 S1 = 1; S0 = 0;
  
-    #5 s1 = 1; s0 = 1;
+    #5 S1 = 1; S0 = 1;
 
     #7 $finish;
 
