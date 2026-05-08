@@ -26,8 +26,19 @@ Future implementations of the same design will also explore:
 ![Circuit Design](images/digitaldesign.png)
 
 ---
+## Simulation Output
+```
+I0 = 1, I1 = 0, I2 = 0, I3 = 1: 
 
-## Waveform
+ 0 Select: {S1S0} = 00 -- OUTPUT: 1
+ 5 Select: {S1S0} = 01 -- OUTPUT: 0
+10 Select: {S1S0} = 10 -- OUTPUT: 0
+15 Select: {S1S0} = 11 -- OUTPUT: 1
+```
+
+---
+
+## Simulation Waveform
 
 ![Waveform](images/waveform.png)
 
@@ -45,6 +56,5 @@ Future implementations of the same design will also explore:
 
 - Implement Dataflow Modeling version
 - Implement Behavioral Modeling version
-- Add simulation waveform screenshots
 - Compare different abstraction styles
 - Analyze readability and scalability of each approach

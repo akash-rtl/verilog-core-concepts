@@ -7,6 +7,8 @@ reg s1,s0;
 mux m1(.OUT(out), .I0(i0), .I1(i1), .I2(i2), .I3(i3), .S0(s0), .S1(s1));
 
 initial begin
+    $dumpfile("tb_mux_4to1.vcd");
+    $dumpvars(0,tb);
 
     i0 = 1; i1 = 0; i2 = 0; i3 = 1;
 
@@ -25,6 +27,8 @@ initial begin
     #5 s1 = 1; s0 = 0;
  
     #5 s1 = 1; s0 = 1;
+
+    #7 $finish;
 
 end
 
