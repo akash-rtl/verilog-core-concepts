@@ -1,11 +1,15 @@
 ## 4-Bit Ripple Carry Adder
-A Verilog implementation of a 4-bit Ripple Carry Adder (RCA) using gate-level abstraction. This project demonstrates structural modeling and verification using testbench.
+A Verilog implementation of a 4-bit Ripple Carry Adder (RCA) using gate-level modeling. 
+The design is built structurally by cascading four 1-bit Full Adders.
 
 ### Architecture
-The design consists of four 1-bit Full Adders (FA) connected in series. The carry output of each stage is "rippled" to the carry input of the next stage.
-![1bit_fulladder](images/fadder.png)
-![4bit_fulladder](images/4bitfadder.png)
+The design consists of four 1-bit Full Adders connected in cascade. 
+The carry output from each stage propagates to the carry input of the next stage, forming a Ripple Carry Adder architecture.
 
+![1bit_fulladder](images/full_adder_block.png)
+![4bit_fulladder](images/ripple_carry_adder_block.png)
+
+---
 
 ### Simulation Output:
 ```
