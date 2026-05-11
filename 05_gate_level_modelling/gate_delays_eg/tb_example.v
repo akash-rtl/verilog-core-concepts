@@ -1,7 +1,7 @@
 module tb;
 
 reg A,B,C;
-wire out;
+wire OUT;
 
 example uut(OUT,A,B,C);
 
