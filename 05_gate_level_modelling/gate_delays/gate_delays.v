@@ -18,6 +18,4 @@ bufif0 #(4:11:12,9:11:15,5:6:8) (out[5], i1, ctrl);
 // to activate any particular delay following way to be executed during runtime: 
 // iverilog -Tmax -o gate_delays.vvp gate_delays.v // or else use other keyword -Tmin // -Ttyp is by default
 
-
-
 endmodule

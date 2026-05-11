@@ -18,10 +18,6 @@ initial begin
     #10 i1 = 0; i2 = 0; ctrl = 1;
 
     #5 $finish;
-
-
-
 end
-
 
 endmodule
