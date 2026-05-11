@@ -63,7 +63,3 @@ The waveform highlights the transitions of A, B, C, and the resulting delay in t
 This exercise demonstrates that the speed of a digital circuit is determined by its longest path (critical path). Even if one input changes quickly, the output may be "held" by a slower path in the logic.
 
 ---
-
-In your testbench, I noticed a small case-sensitivity detail: you declared the wire as `out` but used `OUT` in the `monitor` and the `uut` instantiation. In Verilog, these are treated as different names, so you might want to ensure they match for consistency!
-
-Since you are looking at these path delays, are you planning to explore how "glitches" or "hazards" occur when two paths have different delays?
