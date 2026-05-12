@@ -80,3 +80,28 @@ The `x` states appear because the **Turn-off delay (6)** is longer than the **Ri
 ### Solution
 
 In hardware design, this is avoided using **Break-Before-Make** logic—ensuring the turn-off delay is shorter than the turn-on delay so the wire is released before the next driver takes over.
+
+---
+---
+
+## Why the Delay at t=10 is 6 Units (Not 2)
+
+At t=10, the select line s changes from x to 0. While the rise delay for bufif0 is 2, the output stays x until t=16 because of how Verilog resolves conflicting signals on a wire.
+
+### The Logic Bottleneck
+
+When s transitions from x to 0:
+
+1. bufif1 (the off-going gate) starts in an unknown state (x). It begins turning off, which takes 6 units (Turn-off delay). It continues to drive x until t=16.
+2. bufif0 (the on-going gate) begins turning on to drive a 1. This takes 2 units (Rise delay). It starts driving 1 at t=12.
+
+### Wire Resolution Table
+
+Between t=12 and t=16, the wire receives two different signals:
+
+* Driver A (bufif0): 1
+* Driver B (bufif1): x
+
+In Verilog, any logic level (0 or 1) combined with an unknown state (x) on a wire results in x. Therefore, the output remains x until bufif1 finally reaches the high-impedance state (Z) at t=16. Only then does the 1 from bufif0 become the sole driver and appear at the output.
+
+This demonstrates that the slowest transition—in this case, the Turn-off delay—often dictates when a signal becomes valid.
