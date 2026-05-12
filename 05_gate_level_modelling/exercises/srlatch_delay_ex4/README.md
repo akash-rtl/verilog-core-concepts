@@ -1,3 +1,8 @@
+### Circuit Diagram:
+
+![Waveform](images/digital_diagram.png)
+
+
 ### Simulation Output:
 
 ```
