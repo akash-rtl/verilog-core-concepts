@@ -1,3 +1,5 @@
+`timescale 1ns / 100ps  // Unit is 1ns, Precision is 0.1ns (100ps)
+
 module main(
     output out,
     input i1, i2
