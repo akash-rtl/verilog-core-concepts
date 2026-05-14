@@ -1,6 +1,6 @@
 # Delay in Contious Assignment:
 - The time it takes for a newly evaluated right-hand side (RHS) value to update the left-hand side (LHS) net.
-- **==Inertial Delay==**: A property where any input pulse shorter than the specified delay is not propagated to the output. If a value changes and then reverts within the delay window, the output remains unmodified (i.e., the brief change is ignored).
+- **Inertial Delay**: A property where any input pulse shorter than the specified delay is not propagated to the output. If a value changes and then reverts within the delay window, the output remains unmodified (i.e., the brief change is ignored).
 
 ### Verilog Implementation:
 ```
