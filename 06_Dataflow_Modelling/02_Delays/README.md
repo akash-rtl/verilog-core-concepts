@@ -19,14 +19,15 @@ assign #1 s2 = i1 & i2;
 
 ### Simulation Output:
 ```
- 0 -- [i1 = x | i2 = x] -- OUTPUT = x 
- 5 -- [i1 = 0 | i2 = 0] -- OUTPUT = x 
- 8 -- [i1 = 0 | i2 = 0] -- OUTPUT = 0 
-10 -- [i1 = 0 | i2 = 1] -- OUTPUT = 0 
-13 -- [i1 = 0 | i2 = 1] -- OUTPUT = 1 
-15 -- [i1 = 1 | i2 = 0] -- OUTPUT = 1 
-20 -- [i1 = 1 | i2 = 1] -- OUTPUT = 1 
-23 -- [i1 = 1 | i2 = 1] -- OUTPUT = 0 
+  0 -- [i1 = x | i2 = x] -- OUTPUT = x 
+ 50 -- [i1 = 0 | i2 = 0] -- OUTPUT = x 
+ 80 -- [i1 = 0 | i2 = 0] -- OUTPUT = 0 
+100 -- [i1 = 1 | i2 = 1] -- OUTPUT = 0 
+105 -- [i1 = 0 | i2 = 1] -- OUTPUT = 0 
+130 -- [i1 = 0 | i2 = 1] -- OUTPUT = 1 
+150 -- [i1 = 1 | i2 = 0] -- OUTPUT = 1 
+200 -- [i1 = 1 | i2 = 1] -- OUTPUT = 1 
+230 -- [i1 = 1 | i2 = 1] -- OUTPUT = 0 
 ```
 
 ### Waveform:
