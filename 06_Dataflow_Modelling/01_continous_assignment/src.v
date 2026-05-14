@@ -4,6 +4,7 @@ module main(
 );
 
 //General assignment -- First declare then assign
+wire out;
 assign out = out1 ^ out2;
 
 //Implicit Continous Assignment -- Assign while declaring
