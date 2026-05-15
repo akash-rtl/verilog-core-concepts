@@ -1,4 +1,4 @@
-# 4:1 Multiplexer:
+# 4:1 Multiplexer - Based on Logical Equation:
 
 ### Verilog Implementation:
 ```
