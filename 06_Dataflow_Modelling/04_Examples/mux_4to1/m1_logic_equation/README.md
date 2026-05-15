@@ -10,22 +10,6 @@ assign m2 = i2 & s1 & ~s0;
 assign m3 = i3 & s1 & s0;
 
 assign out = m0 | m1 | m2 | m3;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ```
 
 ### Simulation Output:
