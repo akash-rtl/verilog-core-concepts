@@ -26,6 +26,14 @@ assign a_lt_b = (a_3 & b3) |
 assign a_eq_b = (a3 ~^ b3) & (a2 ~^ b2) & (a1 ~^ b1) & (a0 ~^ b0);
 ```
 
+### 2nd Method -- Dataflow Modelling:
+```
+assign a_gt_b = (a > b);
+assign a_lt_b = (a < b);
+assign a_eq_b = (a == b);
+```
+
+
 ### Simulation Output:
 ```
  0 -- [ A = xxxx | B = xxxx ] -- a_gt_b = x | a_lt_b = x | a_eq_b = x
