@@ -1,5 +1,5 @@
 # Structured Procedures (Using Clock Generator):
-\ Always Block
+    \   Always Block
 - Initial Block
 - Always & Initial cannot be nested
 - If there are multiple blocks each start execution concurrently at time 0.
