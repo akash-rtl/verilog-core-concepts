@@ -19,22 +19,36 @@
 
 ### Verilog Implementation:
 ```
-    x= 0;
 
+//Regular Delay Control ------------------------
+    x= 0;
     #10 y = 1;
-    
     #latency z = 0;
-    
     #y x = x + 1;
-    
     #(4:5:6) p = 0;
+
+//Intra Assignment Dealy Control ------------------
+    i = #7 x + z;
+ 
+
+
+//Zero Delay Control --------------------
+initial begin
+    a = 0;
+    b = 0;
+end
+initial begin
+    #0 a = 1;
+    #0 b = 1;
+end
 ```
 
 ### Simulation Output:
 ```
- 0 -- x = 0 | y = x | z = x | p = x | 
-10 -- x = 0 | y = 1 | z = x | p = x | 
-15 -- x = 0 | y = 1 | z = 0 | p = x | 
-16 -- x = 1 | y = 1 | z = 0 | p = x | 
-21 -- x = 1 | y = 1 | z = 0 | p = 0 |
+ 0 -- x = 0 | y = x | z = x | p = x | i = x | a = 1 | b = 1 | 
+10 -- x = 0 | y = 1 | z = x | p = x | i = x | a = 1 | b = 1 | 
+15 -- x = 0 | y = 1 | z = 0 | p = x | i = x | a = 1 | b = 1 | 
+16 -- x = 1 | y = 1 | z = 0 | p = x | i = x | a = 1 | b = 1 | 
+21 -- x = 1 | y = 1 | z = 0 | p = 0 | i = x | a = 1 | b = 1 | 
+28 -- x = 1 | y = 1 | z = 0 | p = 0 | i = 1 | a = 1 | b = 1 | 
 ```
