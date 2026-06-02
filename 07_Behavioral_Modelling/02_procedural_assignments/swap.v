@@ -37,7 +37,4 @@ end
 always @(posedge clock) begin
     b = a;
 end
-
-
-
 */
