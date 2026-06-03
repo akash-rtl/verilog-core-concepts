@@ -5,6 +5,7 @@
 
 - These update the values of reg, integer, real or time (their bit-select or part-select or concatenation)
 - Unlike continuous assignment, the variable value wont change until next procedural assignment.
+- Gemini: **The Golden Rule of Verilog:** > * Always use **non-blocking assignments (`<=`)** for sequential logic (`always @(posedge...)`).
 
 ### Blocking Assignment:
 - In sequential block they are executed in specified order
