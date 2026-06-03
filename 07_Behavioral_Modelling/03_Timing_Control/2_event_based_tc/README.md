@@ -2,13 +2,13 @@
 
 - Event: change in the value on a register or a net.
 - "@" : specifies event control
-- "@" mainly is used for edge sensitive control
+- "@" is mainly used for edge sensitive control
 ### Regular Event Control:
 ```
 @(clock) q = d;
 @(posedge clock) q = d;
 @(negedge clock) q = d;
-q = @(posedge clock) d; // d is evaluated immediately and assigned to q at + edge
+q = @(posedge clock) d; // d is evaluated immediately and assigned to q at +ve edge
 ```
 
 ### Named Event Control:
