@@ -20,4 +20,4 @@ q = @(posedge clock) d; // d is evaluated immediately and assigned to q at +ve e
 - If one of the multiple signals can trigger the execution it is used.
 - `always @(reset or clock or d)` - comma can also be used.
 - `always @(posedge clock, negedge reset)`
-- `always @* or always @(*)` - to include all input signals in the sensitivity list
+- `always @* or always @(*)` - to include all input signals in the sensitivity list: only the vars which are present inside this always block.
