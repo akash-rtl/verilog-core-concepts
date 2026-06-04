@@ -15,6 +15,7 @@ initial begin
     #5 alu_c = 1; x = 1; z = 1; 
     #5 alu_c = 2; x = 1; z = 1; 
     #5 alu_c = 1; x = 0; z = 0; 
+    #5 alu_c = 5; x = 0; z = 0; 
 end
 
 
