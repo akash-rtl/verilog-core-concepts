@@ -1,0 +1,35 @@
+# For Loops:
+- Make a counter to count upto 20
+### Verilog Implementation:
+```
+initial begin
+    for (count = 0; count < 21; count++) begin
+        $display("Count = %d", count);
+    end
+end
+```
+### Simulation Ouput:
+```
+Count =           0
+Count =           1
+Count =           2
+Count =           3
+Count =           4
+Count =           5
+Count =           6
+Count =           7
+Count =           8
+Count =           9
+Count =          10
+Count =          11
+Count =          12
+Count =          13
+Count =          14
+Count =          15
+Count =          16
+Count =          17
+Count =          18
+Count =          19
+Count =          20
+```
+
