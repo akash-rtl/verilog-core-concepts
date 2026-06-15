@@ -13,7 +13,7 @@
 *.log
 *.pb
 *.wdb
-.Xil/
+*.Xil/
 *.dir/
 
 # Intel/Altera Quartus
