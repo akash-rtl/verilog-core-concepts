@@ -4,8 +4,8 @@
 ### Verilog Implementation:
 ```
 initial begin
-    x = 'b0;
-    y = 'b1;
+    x = 1'b0;
+    y = 1'b1;
     z = {x,y};
     w = {y,x};
 end
