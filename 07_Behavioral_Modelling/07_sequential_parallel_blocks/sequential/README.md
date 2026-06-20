@@ -1,5 +1,5 @@
 # Sequential BLock:
-- An important point to note is that if these assignments were not executed within a sequential block, a race condition would occur
+- An important point to note is that if these assignments were not executed within a sequential block, a race condition would occur.
 
 ### Verilog Implementation:
 ```
