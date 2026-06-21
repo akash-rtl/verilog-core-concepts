@@ -1,0 +1,21 @@
+module main;
+
+reg [15:0] flag;
+integer i = 0;
+
+initial begin
+    
+    flag = 16'b0000_0100_0000_0000;
+
+    begin: block1
+        while (i < 16) begin
+            if(flag[i] == 1'b1) begin 
+                $display("Encountered TRUE bit on sequence number: %1d", i);
+                disable block1;
+            end
+            i += 1;
+        end
+    end
+end
+
+endmodule
