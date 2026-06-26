@@ -3,7 +3,7 @@
 
 
 ### Verilog Implementation:
-```
+```Verilog
 initial begin
     x = 1'b0;
     #5 y = 1'b1;

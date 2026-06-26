@@ -2,7 +2,7 @@
 
 
 ### Verilog Implementation:
-```
+```Verilog
 initial begin: block1
     reg x,y;
     reg [1:0] z,w;  

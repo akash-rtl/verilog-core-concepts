@@ -2,7 +2,7 @@
 
 
 ### Verilog Implementation:
-```
+```Verilog
 initial begin
 
     flag = 16'b0000_0100_0000_0000;

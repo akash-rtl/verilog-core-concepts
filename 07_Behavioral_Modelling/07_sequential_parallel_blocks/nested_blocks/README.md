@@ -2,7 +2,7 @@
 
 
 ### Verilog Implementation:
-```
+```Verilog
 initial begin
     x = 1'b0;
     
