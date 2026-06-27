@@ -1,7 +1,7 @@
 # OPERATORS:
 
 ### Verilog Implementation:
-```
+```verilog
 a1 = 4'b0011; b1 = 4; c1 = 4'bx01x; d1 = -6'd10;
     $display("a1 = %b | b1 = %b | c1 = %b | d1 = %b = %d |\n", a1, b1, c1, d1, d1);
 
