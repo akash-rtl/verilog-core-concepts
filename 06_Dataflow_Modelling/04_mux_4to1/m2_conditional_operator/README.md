@@ -1,7 +1,7 @@
 # 4:1 Multiplexer - Based on Conditional Operator:
 
 ### Verilog Implementation:
-```
+```verilog
 assign out = s1 ? (s0 ? i3 : i2) : ( s0 ? i1 : i0);
 ```
 
