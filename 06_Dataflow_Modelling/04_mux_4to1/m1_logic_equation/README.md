@@ -13,7 +13,7 @@ assign out = m0 | m1 | m2 | m3;
 ```
 
 ### Simulation Output:
-```verilog
+```
  0 i = 1011 -- s1s0 = xx -- OUTPUT = x 
  5 i = 1011 -- s1s0 = 00 -- OUTPUT = 1 
 10 i = 1011 -- s1s0 = 01 -- OUTPUT = 1 
