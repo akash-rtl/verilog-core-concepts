@@ -1,7 +1,7 @@
 # Magnitude Comparator:
 
 ### Verilog Implementation:
-```
+```verilog
 wire a3, a2, a1, a0, b3, b2,b1,b0;
 wire a_3,a_2,a_1,a_0,b_3,b_2,b_1,b_0;
 
