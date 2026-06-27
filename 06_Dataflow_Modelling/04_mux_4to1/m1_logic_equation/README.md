@@ -1,7 +1,7 @@
 # 4:1 Multiplexer - Based on Logical Equation:
 
 ### Verilog Implementation:
-```
+```verilog
 wire m0, m1, m2, m3;
 
 assign m0 = i0 & ~s1 & ~s0;
