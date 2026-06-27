@@ -12,7 +12,7 @@ S̅	R̅	 Q 	  Operation
 ```
 ### Implementation Details
 The design is modeled at the gate level to represent the physical cross-coupling of the gates.
-```Design code:
+```verilog
 module sr_latch(Sbar, Rbar, Q, Qbar);
     input Sbar, Rbar;
     output Q, Qbar;
