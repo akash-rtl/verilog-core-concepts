@@ -3,7 +3,7 @@
 - **Inertial Delay**: A property where any input pulse shorter than the specified delay is not propagated to the output. If a value changes and then reverts within the delay window, the output remains unmodified (i.e., the brief change is ignored).
 
 ### Verilog Implementation:
-```
+```verilog
 //Regular Assignment Delay
 assign #2 out = s1 ^ s2; //xor
 
