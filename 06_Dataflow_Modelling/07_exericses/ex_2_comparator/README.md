@@ -27,7 +27,7 @@ assign a_eq_b = (a3 ~^ b3) & (a2 ~^ b2) & (a1 ~^ b1) & (a0 ~^ b0);
 ```
 
 ### 2nd Method -- Dataflow Modelling:
-```
+```verilog
 assign a_gt_b = (a > b);
 assign a_lt_b = (a < b);
 assign a_eq_b = (a == b);
