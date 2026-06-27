@@ -1,7 +1,7 @@
 # Full Subtractor:
 
 ### Verilog Implementation:
-```
+```verilog
 assign {borrow, diff} = ((x - y) - (b_in));
 ```
 
