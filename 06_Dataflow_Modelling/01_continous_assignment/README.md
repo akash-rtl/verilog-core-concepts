@@ -3,7 +3,7 @@
 - LHS must always be net (bit/vector/concatenation anything)
 
 ### Verilog Implementation:
-```
+```verilog
 //General assignment -- First declare then assign
 wire out;
 assign out = out1 ^ out2;
