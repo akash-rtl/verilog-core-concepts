@@ -9,7 +9,7 @@
 	Delay is always relative to when the statement is encountered
 2. Intra-assignment delay control:
 	`y = #5 x + z`
-	Here we apply the delay to RHS of operator. This gives similar results to nonblocking assignment but not same. 
+	Here we apply the delay to RHS of operator. 
 	The RHS expression is evaluated at the given time. And then after the delay value this expression is deferred to the LHS var.
 	While in Regular Delay control entire expression gets a delay for execution
 3. Zero Delay Control:
