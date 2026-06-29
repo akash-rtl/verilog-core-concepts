@@ -5,7 +5,7 @@ if (expression) true_statement;
 if (expression) true_statement; else false_statement; 
 
 if (expression) true_statement; else if (expression) true_statement_2;
-else (expression) false_statement;
+else false_statement;
 ```
 
 
