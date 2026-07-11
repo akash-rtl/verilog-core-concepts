@@ -1,0 +1,1 @@
+Problem: You want a module that can be built either with a fast (more area) multiplier or a slow (less area) multiplier, decided by a parameter when the module is instantiated.
