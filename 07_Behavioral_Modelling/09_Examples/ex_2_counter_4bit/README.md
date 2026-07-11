@@ -1,4 +1,4 @@
-# 43-it Counter:
+# 4-Bit Counter:
 
 ### Verilog Implementation:
 ```verilog
