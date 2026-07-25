@@ -2,20 +2,31 @@
 
 - Problem Staement:
 ```
-Samir Palnitkar's Verilog HDL involves designing an FSM-based traffic signal controller for an intersection between a major highway and a country road, where the highway light remains green by default due to high traffic volume. A sensor on the country road outputs a signal (X=1) when a car is waiting, which triggers the controller to transition the highway light from green to yellow to red, subsequently turning the country road light green. The country road light stays green as long as cars are detected, but once the sensor clears (X=0), it cycles through yellow to red, safely returning the green right-of-way back to the highway using hardcoded timing delays for each state transition.
+Samir Palnitkar's Verilog HDL involves designing an FSM-based traffic signal controller,
+for an intersection between a major highway and a country road, where the highway light remains green by default due to high traffic volume.
+A sensor on the country road outputs a signal (X=1) when a car is waiting, 
+which triggers the controller to transition the highway light from green to yellow to red, subsequently turning the country road light green. 
+The country road light stays green as long as cars are detected, but once the sensor clears (X=0), 
+it cycles through yellow to red, safely returning the green right-of-way back to the highway using hardcoded timing delays for each state transition.
 ```
 
 ### Future Upgrades:
 - A clock signal mismatch can be seen in the output, it is mainly due to using Non-Synthesizable code.
 - Benefits of using Synthesizable Code: (Response from Claude AI)
 ```
-Yes — completely. The synthesizable counter-based version doesn't just avoid the synthesis problem, it also eliminates the exact timing bug you just found, and for a very clean reason: there's no "waking up late" anymore.
+Yes — completely. The synthesizable counter-based version doesn't just avoid the synthesis problem, 
+it also eliminates the exact timing bug you just found, and for a very clean reason: there's no "waking up late" anymore.
 
 Why the bug disappears
 
-In your current version, the S1/S2/S4 branches sleep through several clock edges via repeat(...) @(posedge clk), then check state again once they wake up — by which point state may be stale relative to how many edges actually passed. The bug comes from the process being suspended and re-checking things after the fact.
+In your current version, the S1/S2/S4 branches sleep through several clock edges via repeat(...) @(posedge clk), 
+then check state again once they wake up — by which point state may be stale relative to how many edges actually passed. 
+The bug comes from the process being suspended and re-checking things after the fact.
 
-The counter version never suspends. Every single clock edge, the block runs exactly once, evaluates state and count as they are right now, and decides the next value. There's no "go to sleep for N edges and hope things line up" — there's just "am I done counting yet?" checked fresh, every cycle, with no possibility of missing or double-counting an edge.
+The counter version never suspends. 
+Every single clock edge, the block runs exactly once, evaluates state and count as they are right now, and decides the next value. 
+There's no "go to sleep for N edges and hope things line up" — there's just "am I done counting yet?" checked fresh, every cycle, 
+with no possibility of missing or double-counting an edge.
 ```
 
 ### Verilog Implementation:
